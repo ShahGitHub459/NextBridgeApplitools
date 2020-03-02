@@ -6,7 +6,7 @@ node('master') {
 }
         stage('Compile stage') {
         
-               bat "mvn install"
+               bat 'mvn clean test'
         
     }
 
