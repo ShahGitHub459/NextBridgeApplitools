@@ -19,6 +19,7 @@ node('master') {
                     bat 'mvn test'
                 }
             }
+            }
 stage('Execute') {
     // some block
 }
