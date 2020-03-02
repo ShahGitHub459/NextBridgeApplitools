@@ -4,8 +4,9 @@ node('master') {
      git 'https://github.com/ShahGitHub459/NextBridgeApplitools'
 }
    stage('Build') {
-       def mvnHome=tool name: 'Maven 3.5.0', type: 'maven'
-       sh "${mvnHome}/bin/mvn package"
+   withMaven(maven : 'apache-maven-3.6.1') {
+                bat'mvn clean compile'
+       
 }
 stage('Execute') {
     // some block
