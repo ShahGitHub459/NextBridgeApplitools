@@ -12,14 +12,12 @@ node('master') {
 }
         stage('Compile stage') {
             
-                bat "mvn clean compile" 
+                bat label: '', script: 'mvn clean compile'
         
     }
 
          stage('testing stage') {
-             steps {
-                bat "mvn test"
-        }
+        
     }
 stage('Execute') {
     // some block
