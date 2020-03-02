@@ -5,8 +5,8 @@ node('master') {
      git 'https://github.com/ShahGitHub459/NextBridgeApplitools'
 }
         stage('Compile stage') {
-        tool name: 'Maven 3.5.0', type: 'maven'
-                bat label: '', script: 'mvn clean compile'
+        
+               bat "mvn install"
         
     }
 
