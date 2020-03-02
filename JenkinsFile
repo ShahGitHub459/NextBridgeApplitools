@@ -1,16 +1,11 @@
 node('master') {
  
-tools { 
-        maven 'Maven 3.3.9' 
-        jdk 'jdk8' 
-    }
-    
     stage('Git Data') {
      
      git 'https://github.com/ShahGitHub459/NextBridgeApplitools'
 }
         stage('Compile stage') {
-            
+        tool name: 'Maven 3.5.0', type: 'maven'
                 bat label: '', script: 'mvn clean compile'
         
     }
