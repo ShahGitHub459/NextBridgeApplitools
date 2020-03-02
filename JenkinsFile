@@ -1,7 +1,7 @@
 node('master') {
  
  
-    stages {
+    
     stage('Git Data') {
      
      git 'https://github.com/ShahGitHub459/NextBridgeApplitools'
@@ -26,5 +26,5 @@ stage('Reporting') {
 stage('Email') {
     // some block
 }
-}
+
 }
