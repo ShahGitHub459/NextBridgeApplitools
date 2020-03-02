@@ -1,12 +1,13 @@
 node('master') {
- stage('Git Data') {
-     
-     git 'https://github.com/ShahGitHub459/NextBridgeApplitools'
-}
+ 
  tools {
         maven 'Maven_3.5.2' 
     }
     stages {
+    stage('Git Data') {
+     
+     git 'https://github.com/ShahGitHub459/NextBridgeApplitools'
+}
         stage('Compile stage') {
             steps {
                 bat "mvn clean compile" 
@@ -26,5 +27,6 @@ stage('Reporting') {
 }
 stage('Email') {
     // some block
+}
 }
 }
