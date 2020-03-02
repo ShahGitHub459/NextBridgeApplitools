@@ -7,17 +7,16 @@ node('master') {
        stage ('Compile Stage') {
 
             
-                withMaven(maven : 'apache-maven-3.6.1') {
+               
                     bat 'mvn clean compile'
                 
-            }
+            
         }
         stage ('Testing Stage') {
 
             
-                withMaven(maven : 'apache-maven-3.6.1') {
                     bat 'mvn test'
-                }
+                
             
             }
 stage('Execute') {
