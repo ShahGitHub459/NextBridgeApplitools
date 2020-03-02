@@ -1,0 +1,19 @@
+node('master') {
+ stage('Git Data') {
+     
+     git 'https://github.com/ShahGitHub459/NextBridgeApplitools'
+}
+   stage('Build') {
+       def mvnHome=tool name: 'Maven 3.5.0', type: 'maven'
+       sh "${mvnHome}/bin/mvn package"
+}
+stage('Execute') {
+    // some block
+}
+stage('Reporting') {
+    // some block
+}
+stage('Email') {
+    // some block
+}
+}
