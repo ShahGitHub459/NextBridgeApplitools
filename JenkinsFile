@@ -3,11 +3,21 @@ node('master') {
      
      git 'https://github.com/ShahGitHub459/NextBridgeApplitools'
 }
-   stage('Build') {
-   withMaven(maven : 'apache-maven-3.6.1') {
-                bat'mvn clean compile'}
-       
-}
+ tools {
+        maven 'Maven_3.5.2' 
+    }
+    stages {
+        stage('Compile stage') {
+            steps {
+                bat "mvn clean compile" 
+        }
+    }
+
+         stage('testing stage') {
+             steps {
+                bat "mvn test"
+        }
+    }
 stage('Execute') {
     // some block
 }
