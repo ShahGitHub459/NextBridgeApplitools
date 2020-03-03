@@ -39,7 +39,7 @@ public class mainPage {
 	//Main Page 
 	@Test(priority=0)
   public void mainPageOpening() {
-	  driver.get("https://nextbridge.com/robotics-machine-design/");
+	  driver.get("https://nextbridge.com/");
 	  while(isPresent==false) {
 		  isPresent=driver.findElements(objectsRequired.mainPageCheckingObject).size() > 0;
 	  }
