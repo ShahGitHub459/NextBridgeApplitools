@@ -1,0 +1,32 @@
+node('master') {
+ 
+    stage('Git Data') {
+     
+     git 'https://github.com/ShahGitHub459/NextBridgeApplitools'
+}
+       stage ('Compile Stage') {
+
+            
+               
+                    bat 'mvn clean compile'
+                
+            
+        }
+        stage ('Testing Stage') {
+
+            
+                    bat 'mvn test'
+                
+            
+            }
+stage('Execute') {
+    // some block
+}
+stage('Reporting') {
+    // some block
+}
+stage('Email') {
+    // some block
+}
+
+}
