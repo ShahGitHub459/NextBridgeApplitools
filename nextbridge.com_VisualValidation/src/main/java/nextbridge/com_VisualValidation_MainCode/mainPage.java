@@ -21,16 +21,15 @@ public class mainPage {
    WebDriver driver;
    Boolean isPresent=false;
    MainObjects objectsRequired;
-   Actions actions;
    EyesRunner runner;
    Eyes eyes;
    JavascriptExecutor js;
+   utility u1;
 	@BeforeClass
   public void parametersInitializing(){
 	  System.setProperty("webdriver.gecko.driver","C:\\geckodriver.exe");  
 	  driver=new FirefoxDriver();
 	  objectsRequired=new MainObjects(driver);
-	  actions=new Actions(driver);
 	  runner=new ClassicRunner();
 	  eyes=new Eyes(runner);
 	  eyes.setApiKey("VBdcg7WHCup1wGOJWmSUXx88oUxFdiM6wS4R0ucQBcY110");
@@ -68,6 +67,8 @@ public class mainPage {
 	}
 	@Test(priority=4)
 	public void aboutClick() throws InterruptedException {
+		u1=new utility(driver);
+		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[4]/a/span")).click();
 		//Check point Applitools	
 		Thread.sleep(5000);
@@ -84,6 +85,7 @@ public class mainPage {
 	
 	@Test(priority=5)
 	public void contactClick() throws InterruptedException {
+		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[6]/a/span")).click();
 		//Check point Applitools	
@@ -95,6 +97,7 @@ public class mainPage {
 	}
 	@Test(priority=6)
 	public void servicesSoftwareDevelopment() throws InterruptedException {
+		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[1]/a/div/span/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[1]/ul/li[1]/a/span")).click();
@@ -107,6 +110,7 @@ public class mainPage {
 	}
 	@Test(priority=7)
 	public void specializedVerticals() throws InterruptedException {
+		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[1]/a/div/span/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[1]/ul/li[2]/a/span")).click();
@@ -119,6 +123,7 @@ public class mainPage {
 	}
 	@Test(priority=8)
 	public void roboticsSoftware() throws InterruptedException {
+		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[1]/a/div/span/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[1]/ul/li[3]/a/span")).click();
@@ -131,6 +136,7 @@ public class mainPage {
 	}
 	@Test(priority=9)
 	public void roboticsMachineDesign() throws InterruptedException {
+		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[1]/a/div/span/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[1]/ul/li[4]/a/span")).click();
@@ -143,6 +149,7 @@ public class mainPage {
 	}
 	@Test(priority=10)
 	public void technologiesLanguageAndFramework() throws InterruptedException {
+		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[2]/a/div/span/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[2]/ul/li/a/span")).click();
@@ -155,6 +162,7 @@ public class mainPage {
 	}
 	@Test(priority=11)
 	public void lookInsideInitiatives() throws InterruptedException {
+		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[3]/a/div/span/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[3]/ul/li[1]/a/span")).click();
@@ -167,6 +175,7 @@ public class mainPage {
 	}
 	@Test(priority=12)
 	public void lookInsideEvents() throws InterruptedException {
+		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[3]/a/div/span/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[3]/ul/li[2]/a/span")).click();
