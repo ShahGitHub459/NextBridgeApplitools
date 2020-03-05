@@ -42,8 +42,9 @@ public class mainPage {
 	  js=((JavascriptExecutor) driver);
   }
 	//Main Page 
+   	@Parameters({"appName","testName"})
 	@Test(priority=0)
-  public void mainPageOpening() {
+  public void mainPageOpening(String appName,String testName) {
 	  driver.get("https://nextbridge.com/");
 	  while(isPresent==false) {
 		  isPresent=driver.findElements(objectsRequired.mainPageCheckingObject).size() > 0;
@@ -53,7 +54,7 @@ public class mainPage {
       //Resize the current window to the given dimension
      // driver.manage().window().setSize(d);
 	//Check point Applitools
-	  eyes.open(driver,"Next","Main Page", new RectangleSize(626,600));
+	  eyes.open(driver,appName,testName, new RectangleSize(626,600));
 	  eyes.setForceFullPageScreenshot(true);
 	  	
   }
