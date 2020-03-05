@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-02T12:47:13 PKT" name="Default suite" finished-at="2020-03-02T12:47:35 PKT" duration-ms="21780">
+  <suite started-at="2020-03-05T19:16:20 PKT" name="Default suite" finished-at="2020-03-05T19:17:09 PKT" duration-ms="48165">
     <groups>
     </groups>
-    <test started-at="2020-03-02T12:47:13 PKT" name="Default test" finished-at="2020-03-02T12:47:35 PKT" duration-ms="21780">
+    <test started-at="2020-03-05T19:16:20 PKT" name="Default test" finished-at="2020-03-05T19:17:09 PKT" duration-ms="48165">
       <class name="nextbridge.com_VisualValidation_MainCode.mainPage">
-        <test-method is-config="true" signature="parametersInitializing()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-02T12:47:13 PKT" name="parametersInitializing" finished-at="2020-03-02T12:47:19 PKT" duration-ms="5951" status="PASS">
+        <test-method is-config="true" signature="parametersInitializing()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:20 PKT" name="parametersInitializing" finished-at="2020-03-05T19:16:29 PKT" duration-ms="8140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- parametersInitializing -->
-        <test-method signature="mainPageOpening()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-02T12:47:19 PKT" name="mainPageOpening" finished-at="2020-03-02T12:47:28 PKT" duration-ms="8776" status="PASS">
+        <test-method signature="mainPageOpening()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:29 PKT" name="mainPageOpening" finished-at="2020-03-05T19:16:41 PKT" duration-ms="12818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainPageOpening -->
-        <test-method signature="servicesHover()[pri:1, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-02T12:47:28 PKT" name="servicesHover" finished-at="2020-03-02T12:47:29 PKT" duration-ms="560" status="PASS">
+        <test-method signature="servicesHover()[pri:1, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:41 PKT" name="servicesHover" finished-at="2020-03-05T19:16:42 PKT" duration-ms="516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- servicesHover -->
-        <test-method signature="technologiesHover()[pri:2, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-02T12:47:29 PKT" name="technologiesHover" finished-at="2020-03-02T12:47:29 PKT" duration-ms="285" status="PASS">
+        <test-method signature="technologiesHover()[pri:2, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:42 PKT" name="technologiesHover" finished-at="2020-03-05T19:16:42 PKT" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- technologiesHover -->
-        <test-method signature="looInsideHover()[pri:3, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-02T12:47:29 PKT" name="looInsideHover" finished-at="2020-03-02T12:47:29 PKT" duration-ms="269" status="PASS">
+        <test-method signature="looInsideHover()[pri:3, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:42 PKT" name="looInsideHover" finished-at="2020-03-05T19:17:04 PKT" duration-ms="21748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- looInsideHover -->
-        <test-method is-config="true" signature="Destroy()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-02T12:47:29 PKT" name="Destroy" finished-at="2020-03-02T12:47:35 PKT" duration-ms="5881" status="PASS">
+        <test-method is-config="true" signature="Destroy()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:17:04 PKT" name="Destroy" finished-at="2020-03-05T19:17:09 PKT" duration-ms="4620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Destroy -->
