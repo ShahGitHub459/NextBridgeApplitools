@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="softwaretestingmaterial">
+	<test name="testngTest">
+		<classes>
+			<parameter name="Batch" value="Last Five"/>
+			<class name="nextbridge.com_VisualValidation_MainCode.mainPage">
+				<methods>
+					<include name="mainPageOpening">
+					</include>
+					<exclude name="servicesHover">
+					</exclude>
+					<exclude name="technologiesHover">
+					</exclude>
+					<exclude name="looInsideHover">
+					</exclude>
+					<exclude name="aboutClick">
+					</exclude>
+					<exclude name="contactClick">
+					</exclude>
+					<exclude name="servicesSoftwareDevelopment">
+					</exclude>
+					<exclude name="specializedVerticals">
+					</exclude>
+					<exclude name="roboticsSoftware">
+					</exclude>
+					<include name="roboticsMachineDesign">
+					</include>
+					<include name="technologiesLanguageAndFramework">
+					</include>
+					<include name="lookInsideInitiatives">
+					</include>
+					<include name="lookInsideEvents">
+					</include>
+					<include name="Destroy">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

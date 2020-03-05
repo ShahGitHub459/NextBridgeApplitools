@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.applitools.eyes.BatchInfo;
@@ -25,9 +26,11 @@ public class mainPage {
    EyesRunner runner;
    Eyes eyes;
    JavascriptExecutor js;
+   private static BatchInfo batch;
    utility u1;
+   	@Parameters({"Batch"})
 	@BeforeClass
-  public void parametersInitializing(){
+  public void parametersInitializing(String Batch){
 	  System.setProperty("webdriver.gecko.driver","C:\\geckodriver.exe");  
 	  driver=new FirefoxDriver();
 	  objectsRequired=new MainObjects(driver);
@@ -35,7 +38,8 @@ public class mainPage {
 	  eyes=new Eyes(runner);
 	  eyes.setApiKey("Ejo0qn0t4r3n5LbYsGH16NFk93gmVrQy8oDuD5IIWdE110");
 	  // eyes.setApiKey("VBdcg7WHCup1wGOJWmSUXx88oUxFdiM6wS4R0ucQBcY110");
-	  eyes.setBatch(new BatchInfo("First Five"));
+	  batch=new BatchInfo(Batch);
+	  eyes.setBatch(batch);
 	  js=((JavascriptExecutor) driver);
   }
 	//Main Page 
@@ -68,7 +72,7 @@ public class mainPage {
 		js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
 		eyes.checkWindow("Main Page");
 	}
-/*	@Test(priority=4)
+	@Test(priority=4)
 	public void aboutClick() throws InterruptedException {
 		u1=new utility(driver);
 		u1.pageTimeOut(driver);
@@ -80,12 +84,6 @@ public class mainPage {
 		Thread.sleep(5000);
 		eyes.checkWindow("About Page");
 	}
-	/*@Test(priority=5)
-	public void blogClick() {
-		actions.moveToElement(objectsRequired.blogObject()).perform();
-		//Check point Applitools	
-	}*/
-	
 	@Test(priority=5)
 	public void contactClick() throws InterruptedException {
 		u1.pageTimeOut(driver);
@@ -188,7 +186,7 @@ public class mainPage {
 		js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
 		Thread.sleep(5000);
 		eyes.checkWindow("lookInsideEvents Page");
-	}*/
+	}
 	@AfterClass
 	public void Destroy() {
 		eyes.closeAsync();

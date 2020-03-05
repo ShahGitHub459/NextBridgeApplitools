@@ -2,7 +2,39 @@
 <suite name="softwaretestingmaterial">
 	<test name="testngTest">
 		<classes>
-			<class name="nextbridge.com_VisualValidation_MainCode.mainPage" />
+			<parameter name="Batch" value="First Five"/>
+			<class name="nextbridge.com_VisualValidation_MainCode.mainPage">
+				<methods>
+					<include name="mainPageOpening">
+					</include>
+					<include name="servicesHover">
+					</include>
+					<include name="technologiesHover">
+					</include>
+					<include name="looInsideHover">
+					</include>
+					<include name="aboutClick">
+					</include>
+					<include name="contactClick">
+					</include>
+					<include name="servicesSoftwareDevelopment">
+					</include>
+					<include name="specializedVerticals">
+					</include>
+					<include name="roboticsSoftware">
+					</include>
+					<exclude name="roboticsMachineDesign">
+					</exclude>
+					<exclude name="technologiesLanguageAndFramework">
+					</exclude>
+					<exclude name="lookInsideInitiatives">
+					</exclude>
+					<exclude name="lookInsideEvents">
+					</exclude>
+					<include name="Destroy">
+					</include>
+				</methods>
+			</class>
 		</classes>
 	</test>
 </suite>
