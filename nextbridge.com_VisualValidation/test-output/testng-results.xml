@@ -1,37 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="8" total="13" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-05T19:16:20 PKT" name="Default suite" finished-at="2020-03-05T19:17:09 PKT" duration-ms="48165">
+  <suite started-at="2020-03-05T19:59:03 PKT" name="softwaretestingmaterial" finished-at="2020-03-05T20:00:03 PKT" duration-ms="59811">
     <groups>
     </groups>
-    <test started-at="2020-03-05T19:16:20 PKT" name="Default test" finished-at="2020-03-05T19:17:09 PKT" duration-ms="48165">
+    <test started-at="2020-03-05T19:59:03 PKT" name="testngTest" finished-at="2020-03-05T20:00:03 PKT" duration-ms="59811">
       <class name="nextbridge.com_VisualValidation_MainCode.mainPage">
-        <test-method is-config="true" signature="parametersInitializing()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:20 PKT" name="parametersInitializing" finished-at="2020-03-05T19:16:29 PKT" duration-ms="8140" status="PASS">
+        <test-method is-config="true" signature="parametersInitializing(java.lang.String)[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6e0dec4a]" started-at="2020-03-05T19:59:03 PKT" name="parametersInitializing" finished-at="2020-03-05T19:59:09 PKT" duration-ms="6105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Last Five]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- parametersInitializing -->
-        <test-method signature="mainPageOpening()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:29 PKT" name="mainPageOpening" finished-at="2020-03-05T19:16:41 PKT" duration-ms="12818" status="PASS">
+        <test-method signature="mainPageOpening()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6e0dec4a]" started-at="2020-03-05T19:59:09 PKT" name="mainPageOpening" finished-at="2020-03-05T19:59:14 PKT" duration-ms="5443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainPageOpening -->
-        <test-method signature="servicesHover()[pri:1, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:41 PKT" name="servicesHover" finished-at="2020-03-05T19:16:42 PKT" duration-ms="516" status="PASS">
+        <test-method signature="roboticsMachineDesign()[pri:9, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6e0dec4a]" started-at="2020-03-05T19:59:14 PKT" name="roboticsMachineDesign" finished-at="2020-03-05T19:59:26 PKT" duration-ms="11527" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- servicesHover -->
-        <test-method signature="technologiesHover()[pri:2, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:42 PKT" name="technologiesHover" finished-at="2020-03-05T19:16:42 PKT" duration-ms="270" status="PASS">
+        </test-method> <!-- roboticsMachineDesign -->
+        <test-method signature="technologiesLanguageAndFramework()[pri:10, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6e0dec4a]" started-at="2020-03-05T19:59:26 PKT" name="technologiesLanguageAndFramework" finished-at="2020-03-05T19:59:38 PKT" duration-ms="12156" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- technologiesHover -->
-        <test-method signature="looInsideHover()[pri:3, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:16:42 PKT" name="looInsideHover" finished-at="2020-03-05T19:17:04 PKT" duration-ms="21748" status="PASS">
+        </test-method> <!-- technologiesLanguageAndFramework -->
+        <test-method signature="lookInsideInitiatives()[pri:11, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6e0dec4a]" started-at="2020-03-05T19:59:38 PKT" name="lookInsideInitiatives" finished-at="2020-03-05T19:59:51 PKT" duration-ms="12933" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- looInsideHover -->
-        <test-method is-config="true" signature="Destroy()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6d2a209c]" started-at="2020-03-05T19:17:04 PKT" name="Destroy" finished-at="2020-03-05T19:17:09 PKT" duration-ms="4620" status="PASS">
+        </test-method> <!-- lookInsideInitiatives -->
+        <test-method signature="lookInsideEvents()[pri:12, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6e0dec4a]" started-at="2020-03-05T19:59:51 PKT" name="lookInsideEvents" finished-at="2020-03-05T20:00:02 PKT" duration-ms="11546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lookInsideEvents -->
+        <test-method is-config="true" signature="Destroy()[pri:0, instance:nextbridge.com_VisualValidation_MainCode.mainPage@6e0dec4a]" started-at="2020-03-05T20:00:03 PKT" name="Destroy" finished-at="2020-03-05T20:00:03 PKT" duration-ms="6" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at nextbridge.com_VisualValidation_MainCode.mainPage.Destroy(mainPage.java:197)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Destroy -->
       </class> <!-- nextbridge.com_VisualValidation_MainCode.mainPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- testngTest -->
+  </suite> <!-- softwaretestingmaterial -->
 </testng-results>

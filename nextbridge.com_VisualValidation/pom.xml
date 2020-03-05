@@ -43,7 +43,7 @@
 				<version>2.20</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/main/resources/testNGLast.xml </suiteXmlFile>
+						<suiteXmlFile>src/main/resources/TestNG.xml </suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

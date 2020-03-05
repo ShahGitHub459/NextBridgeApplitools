@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -50,6 +49,9 @@ public class mainPage {
 		  isPresent=driver.findElements(objectsRequired.mainPageCheckingObject).size() > 0;
 	  }
 	  isPresent=false;
+	  //Dimension d = new Dimension(626,600);
+      //Resize the current window to the given dimension
+     // driver.manage().window().setSize(d);
 	//Check point Applitools
 	  eyes.open(driver,"Next","Main Page", new RectangleSize(626,600));
 	  eyes.setForceFullPageScreenshot(true);
@@ -137,6 +139,7 @@ public class mainPage {
 	}
 	@Test(priority=9)
 	public void roboticsMachineDesign() throws InterruptedException {
+		u1=new utility(driver);
 		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/div/ul/li[1]/a/div/span/i")).click();
