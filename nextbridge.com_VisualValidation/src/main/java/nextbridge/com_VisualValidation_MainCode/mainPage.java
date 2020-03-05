@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.applitools.eyes.BatchInfo;
 import com.applitools.eyes.EyesRunner;
 import com.applitools.eyes.RectangleSize;
 import com.applitools.eyes.TestResultsSummary;
@@ -32,7 +33,9 @@ public class mainPage {
 	  objectsRequired=new MainObjects(driver);
 	  runner=new ClassicRunner();
 	  eyes=new Eyes(runner);
-	  eyes.setApiKey("VBdcg7WHCup1wGOJWmSUXx88oUxFdiM6wS4R0ucQBcY110");
+	  eyes.setApiKey("Ejo0qn0t4r3n5LbYsGH16NFk93gmVrQy8oDuD5IIWdE110");
+	  // eyes.setApiKey("VBdcg7WHCup1wGOJWmSUXx88oUxFdiM6wS4R0ucQBcY110");
+	  eyes.setBatch(new BatchInfo("First Five"));
 	  js=((JavascriptExecutor) driver);
   }
 	//Main Page 
@@ -121,7 +124,7 @@ public class mainPage {
 		Thread.sleep(5000);
 		eyes.checkWindow("specializedVerticals Page");
 	}
-	@Test(priority=8)
+/*	@Test(priority=8)
 	public void roboticsSoftware() throws InterruptedException {
 		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
@@ -185,7 +188,7 @@ public class mainPage {
 		js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
 		Thread.sleep(5000);
 		eyes.checkWindow("lookInsideEvents Page");
-	}
+	}*/
 	@AfterClass
 	public void Destroy() {
 		eyes.closeAsync();
