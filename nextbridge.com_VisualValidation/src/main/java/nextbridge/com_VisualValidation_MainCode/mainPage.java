@@ -68,7 +68,7 @@ public class mainPage {
 		js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
 		eyes.checkWindow("Main Page");
 	}
-	@Test(priority=4)
+/*	@Test(priority=4)
 	public void aboutClick() throws InterruptedException {
 		u1=new utility(driver);
 		u1.pageTimeOut(driver);
@@ -124,7 +124,7 @@ public class mainPage {
 		Thread.sleep(5000);
 		eyes.checkWindow("specializedVerticals Page");
 	}
-/*	@Test(priority=8)
+	@Test(priority=8)
 	public void roboticsSoftware() throws InterruptedException {
 		u1.pageTimeOut(driver);
 		driver.findElement(By.xpath("/html/body/div/div/header/div/div/div/div/a[2]/i")).click();
