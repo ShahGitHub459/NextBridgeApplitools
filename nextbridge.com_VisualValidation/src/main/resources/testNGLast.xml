@@ -3,6 +3,8 @@
 	<test name="testngTest">
 		<classes>
 			<parameter name="Batch" value="Last Five"/>
+			<parameter name="appName" value="Last Five test App"/>
+			<parameter name="testName" value="Last Five Tests"/>
 			<class name="nextbridge.com_VisualValidation_MainCode.mainPage">
 				<methods>
 					<include name="mainPageOpening">
