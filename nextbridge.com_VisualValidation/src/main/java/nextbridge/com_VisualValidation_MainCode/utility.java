@@ -10,6 +10,6 @@ public class utility {
 		this.driver=driver;
 	}
 	public void pageTimeOut(WebDriver driver) {
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
 	}
 }
